@@ -154,6 +154,7 @@ img {
         flex-direction: column;
         padding-top: 72px;
         padding-bottom: 40px;
+        min-height: 100vh;
     }
     
     .mobile-menu-close-btn {
@@ -174,7 +175,7 @@ img {
     }
     
     .mob-menu-nav {
-        margin-bottom: 168px;
+        margin-bottom: auto;
     }
     
     .mob-menu {
@@ -330,6 +331,12 @@ img {
 
 .team-section {
     background-color: #F4F4FD;
+}
+
+@media (max-width: 767px) {
+    .team-section .container {
+        width: 296px;
+    }
 }
 
 .team-title {
@@ -787,6 +794,7 @@ img {
     margin-right: 8px;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
 }
 
 .own-checkbox-icon {
@@ -1145,8 +1153,7 @@ img {
     .hero-section {
         padding-top: 188px;
         padding-bottom: 188px;
-        max-width: 1440px;
-        margin-bottom: 48px; 
+        max-width: 1440px; 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office-desk.jpg");
     }
 
@@ -1216,6 +1223,8 @@ img {
 
     .footer-content {
         width: 100%;
+        flex-wrap: nowrap;
+        gap: unset;
     }
 
     .footer-left-part {
