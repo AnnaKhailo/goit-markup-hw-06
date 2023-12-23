@@ -36,7 +36,7 @@
             </li>
           </ul>
         </nav>
-        <button class="mobile-menu-btn" type="button">
+        <button class="mobile-menu-btn" type="button" data-mobile-menu-open>
           <svg
             class="mobile-menu-btn-icon"
             width="24"
@@ -935,9 +935,13 @@
     </div>
 
     <!-- MOBILE MENU -->
-    <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-wrapper is-hidden" data-mobile-menu>
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close-btn" type="button">
+        <button
+          class="mobile-menu-close-btn"
+          type="button"
+          data-mobile-menu-close
+        >
           <svg
             class="mob-menu-close-icon"
             width="8"
@@ -1044,5 +1048,6 @@
         </ul>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
